@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EduSpark - Dynamic Theming &amp; Visual Style Guide</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700;800&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #6366F1;--secondary-color: #EC4899;--accent-color: #10B981;--background-color: #111827;--surface-color: #1F2937;--text-primary-color: #F9FAFB;--text-secondary-color: #9CA3AF;}
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary-color);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .glassmorphism {
+            background-color: rgba(31, 41, 55, 0.75);backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .bg-gradient {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary-color)]">
+<div class="min-h-screen p-4 sm:p-6 lg:p-8">
+<header class="flex justify-between items-center py-6 px-4 md:px-10 lg:px-16 glassmorphism rounded-xl">
+<div class="flex items-center space-x-2">
+<div class="w-10 h-10 flex items-center justify-center rounded-full bg-[var(--surface-color)] relative">
+<div class="absolute w-full h-full border-2 rounded-full animate-spin" style="border-image: linear-gradient(to right, var(--primary-color), var(--secondary-color)) 1; border-color: transparent;"></div>
+<span class="material-icons text-xl text-gradient">school</span>
+</div>
+<span class="text-2xl font-black tracking-wider">EduSpark</span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-base text-gradient font-semibold" href="#">Dashboard</a>
+<a class="text-base text-[var(--text-secondary-color)] hover:text-white transition-colors" href="#">Courses</a>
+<a class="text-base text-[var(--text-secondary-color)] hover:text-white transition-colors" href="#">Forum</a>
+<a class="text-base text-[var(--text-secondary-color)] hover:text-white transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="hidden md:block bg-gradient text-white font-bold py-2 px-6 rounded-full hover:scale-105 transition-transform">
+                Login
+            </button>
+<button class="md:hidden text-white">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</header>
+<main class="mt-16 md:mt-24">
+<div class="text-center max-w-4xl mx-auto">
+<div class="inline-flex items-center space-x-2 bg-[var(--surface-color)]/50 border border-gray-700 rounded-full px-4 py-1 mb-6">
+<span class="material-icons text-yellow-400">star</span>
+<span class="font-semibold text-lg">4.9</span>
+<span class="text-[var(--text-secondary-color)]">From Reviews</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-tight">
+<span class="text-gradient">The Digital</span> Evolution
+                <br/>
+                Starts Here
+            </h1>
+<p class="mt-6 text-lg text-[var(--text-secondary-color)] max-w-2xl mx-auto">
+                From AI to immersive realities, we shape brilliant innovations that transform industries and learning experiences.
+            </p>
+<div class="mt-10 flex justify-center items-center space-x-4">
+<button class="bg-gradient text-white font-bold py-4 px-8 rounded-full hover:scale-105 transition-transform text-lg">
+                    Get a Demo
+                </button>
+<div class="flex -space-x-4">
+<img alt="User avatar" class="w-12 h-12 rounded-full border-2 border-gray-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo06H6z1kIk21onLbE-SUXCsLbX3JQlsEJFg2DkJz82aW208RfYUAqC8ahjca1Yd5iwzKOyoQJV68OobFEsWLyFfcDfdbcPJ2OtTiIKAFRwECrXRTTIHvRtdYYYLL9E3JTdxlsWrQHlLot8cX4tbrWRCUJ4jIAwylaszImA3qKIW-CFzMmOB_ac9QPTHonb1402JRUcop2dI6UX8QTXaI9jZSfY3vgSQkzublwO6NiNvmDGk9BAG7zfyYnSOTW6Act82L0C40Ihq4"/>
+<img alt="User avatar" class="w-12 h-12 rounded-full border-2 border-gray-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgq0N0N7tc4yb_cZrkaWt1GYvXgDLDia1MFFSnYMoie9epcEfvjECp0AhlNli--_1ldmKi8dcMhtrXRPwG8UEmL0JCfewZy8hBNrt5Hcc4wMGiKAcTc5HhbvtIV095cbL-0Q0G1QIlsartYTZZapJoRU7h5AZsT7y3vI-xbgBF1eWnzgXhKySDqrdHc3RxHDnxglO_Eyk0ONVbEJ2Z2Wq1XXqnOCsga7aQrQxUxQupHecL5AreRudHyk7-zhBza2TGzEtutx-dEuM"/>
+<img alt="User avatar" class="w-12 h-12 rounded-full border-2 border-gray-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvihhXFP8TfkOWYFjZLJ3QAMCqS3BlESxKaKuAoY-CyP3Ezwyb_RShSINCcG2_dkie2H7TfOJrBItR0erjuaDSrlltteavxfZRNe3IjyzS4oooAFa-n4kQwHzUs9CeumuuhUiJO_0lryG6vzJstEv2fsBMh1rskB05kx61KMfYj9yGYZTWhTAa9sKCW1OS8r8cl9h2utQzWz8goX1sMkpSAN_AMmTwC0OERuhUpZYj5u4kB1tcGqOrd0ZQx8rGaJDgoT3msW8bX4I"/>
+</div>
+</div>
+</div>
+<div class="mt-20 md:mt-32 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div>
+<h2 class="text-5xl font-extrabold text-gradient">567K+</h2>
+<p class="text-[var(--text-secondary-color)] mt-2">Happy Students</p>
+</div>
+<div>
+<h2 class="text-5xl font-extrabold text-gradient">169M</h2>
+<p class="text-[var(--text-secondary-color)] mt-2">Hours of Learning</p>
+</div>
+<div class="flex justify-center items-center">
+<button class="w-16 h-16 rounded-full border-2 border-gray-600 flex items-center justify-center hover:border-[var(--primary-color)] transition-colors">
+<span class="material-icons text-3xl">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="mt-20 md:mt-32 p-8 md:p-12 lg:p-16 glassmorphism rounded-3xl max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
+<div class="flex-shrink-0 grid grid-cols-2 gap-4">
+<div class="w-24 h-24 bg-[var(--surface-color)] rounded-lg flex items-center justify-center"><span class="material-icons text-4xl text-[var(--primary-color)]">auto_awesome</span></div>
+<div class="w-24 h-24 bg-[var(--surface-color)] rounded-lg flex items-center justify-center"><span class="material-icons text-4xl text-[var(--secondary-color)]">school</span></div>
+<div class="w-24 h-24 bg-[var(--surface-color)] rounded-lg flex items-center justify-center"><span class="material-icons text-4xl text-[var(--accent-color)]">group</span></div>
+<div class="w-24 h-24 bg-[var(--surface-color)] rounded-lg flex items-center justify-center"><span class="material-icons text-4xl text-[var(--primary-color)] opacity-70">hub</span></div>
+</div>
+<div class="md:ml-12">
+<p class="text-xl md:text-2xl leading-relaxed text-[var(--text-secondary-color)]">
+                    From AI to immersive realities we shape brilliant innovations that transform industries. EduSpark integrates cutting-edge technology to create a dynamic and personalized learning journey for every student.
+                </p>
+</div>
+</div>
+<div class="mt-20 md:mt-32 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glassmorphism p-8 rounded-2xl flex flex-col">
+<h3 class="text-3xl font-bold mb-4">Unlock the Power of Future Technology</h3>
+<p class="text-[var(--text-secondary-color)] mb-6 flex-grow">Harness AI-driven insights to accelerate your learning and skill acquisition.</p>
+<div class="aspect-video bg-[var(--surface-color)] rounded-lg flex items-center justify-center">
+<img alt="A person wearing a VR headset" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN7Xqax6cm91YkuQsB1oXLf0rHq3hHZBAR6eehdSMcfUkcm1BJyBlaI5LI-iTjSixNDiGm_sC1d4_bCmDOOU2IvC7FNEY1_3lPZ8vYOmvNSQQ7oqPtcL_wWtGigkRuGNTNmIFsGYMWzRAzt8iizXp5FV1qTeWt4zjswzvM2A1g2RM_dW8Z_qnSO8mUYksast6zLNZw2AMVm4Urwfpy0ZIcaAVz9dySBTwul3D9b0bY2j-9dJ0hCCQiqqgi2IE13HfCm4uHyYkNX-0"/>
+</div>
+</div>
+<div class="glassmorphism p-8 rounded-2xl flex flex-col">
+<h3 class="text-3xl font-bold mb-4">Personalized Learning Paths</h3>
+<p class="text-[var(--text-secondary-color)] mb-6 flex-grow">Our platform adapts to your pace and style, offering customized course recommendations and content.</p>
+<div class="aspect-video bg-[var(--surface-color)] rounded-lg flex items-center justify-center">
+<img alt="A person with futuristic glasses looking at a screen" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLpZERs2YdLcZEOKxbNh_TndaYqtJ9gaPeztmAtSYMO5CTGSK6BZfj__7HzGsjm3cJp1BVY_xmS7Xa0vtiU4Nobg4c5mrXrE8Ik0tPRPkFCgDvZI8UniROprQFMdKwb1d36g3DE2w8v4_19VLM4PMBeoZJFI-DtA40gtPnzA9IFA_f3h-_Es7ge8BG_3wgG0fmY-SbqMPOwKXp7LXX06mLw4A0Fzv8V2zGylA2QQIFKawP_nErXKFRWh05z94u8cfzfVV0mfYKZtA"/>
+</div>
+<button class="mt-6 w-full bg-gradient text-white font-bold py-3 px-6 rounded-full hover:scale-105 transition-transform">
+                    Explore Courses
+                </button>
+</div>
+<div class="glassmorphism p-8 rounded-2xl md:col-span-2 lg:col-span-1">
+<h3 class="text-3xl font-bold mb-4">Collaborative Community</h3>
+<p class="text-[var(--text-secondary-color)] mb-6">Connect with peers, mentors, and instructors in a vibrant and supportive global network.</p>
+<div class="bg-[var(--surface-color)] p-4 rounded-xl relative">
+<img alt="Man using a VR headset" class="w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLMAWhjQa3Z13oclUhJYCbdW0x6e0SZrSsGDSwqoll7RvwPTBVhPLyvVMV4q68oM__M2Zuria2jcJDSsOVzcqI_ct-szvCYvfhqSHl2EvfOOc0NIe6K8TKe8lx1Eex9NXDao7f_-J886rErhIZVIBBusAcuRJbvtMNjeLx7KvryrNqPyjfUElDfIYNkBgEv4WGu_l5TBo-vfeTDgsQ_OYw_64H-Y_l89b3BX2LGJHapsm79w7JbRB0a_GHmB7GYS4a6f_WxY9PJHw"/>
+<div class="absolute bottom-4 right-4 glassmorphism p-3 rounded-lg flex items-center space-x-4">
+<div>
+<p class="font-bold text-lg text-gradient">$93</p>
+<p class="text-sm text-[var(--text-secondary-color)]">Weekly</p>
+</div>
+<div class="border-l border-gray-600 h-8"></div>
+<div>
+<p class="font-bold text-lg">$78</p>
+<p class="text-sm text-[var(--text-secondary-color)]">Monthly</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 md:mt-32 max-w-7xl mx-auto text-center">
+<h2 class="text-4xl md:text-5xl font-black mb-12">Stronger Through Synergy Partnerships</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glassmorphism p-8 rounded-2xl text-left">
+<p class="text-[var(--text-secondary-color)] mb-6">"I've made real friends through the multiplayer games on this platform. This is the best educational and gaming community."</p>
+<div class="flex items-center space-x-4">
+<img alt="User avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrALVPl0mhNXo-2YIYdsjv4YjA5VDRzhM8wqoq9yjZLFmHjWtdAyHbxOqEJj9757DR3a6-WMGmta9tz7T1dOtUUtOtGSudlNQdaHdKRLAy3Y4Wf-4XQTD-h9WOo5OlmhQBECokrWOrvFsAGu4x7Xo4LifaXiCLIAZFAFsqKKeJz_uwakQ_mg6u80X4O1hJraoQk_xpxyuuPZ66OHu4-BdjeWxxLSft3QVATc0xw4jXRBjBOS0rLsan4_YL-S51tGo56BQxHcxdluA"/>
+<div>
+<p class="font-bold">Mariya Qibtia</p>
+<p class="text-sm text-[var(--text-secondary-color)]">Game Designer</p>
+</div>
+</div>
+</div>
+<div class="glassmorphism p-8 rounded-2xl text-left">
+<p class="text-[var(--text-secondary-color)] mb-6">"The AI tools for course creation have saved me countless hours. It's revolutionary for educators."</p>
+<div class="flex items-center space-x-4">
+<img alt="User avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr0lRvasJ6Qc5uGRKM3cjVO-BeGb-WVnh1rwNTfxncoG4SmugRETbw5LN5JcsanOOo9fX4WQ4yVbnuqGKOyj23stG2njhzafEX80MfAZY4gDTQndrt1DdNgql_V26sXiVKARkLte4SZtEECgeOToNl4lyGaF6TcPiAGKx-wp0EqqPzezvDcN1Yh1Q0BF-TEtzkYNOviyUKzsXddbkPKwAfQ1xndiB3Lz1pRucb6ha3z_EgjHKcfA3guwI44mDDRXr3DS30UM953Fc"/>
+<div>
+<p class="font-bold">Rasmus Lgerke</p>
+<p class="text-sm text-[var(--text-secondary-color)]">CEO, EduCreators</p>
+</div>
+</div>
+</div>
+<div class="glassmorphism p-8 rounded-2xl text-left">
+<p class="text-[var(--text-secondary-color)] mb-6">"The analytics dashboard is incredibly detailed, helping me track student progress with unprecedented accuracy."</p>
+<div class="flex items-center space-x-4">
+<img alt="User avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5epDQOHCdBXxygoj1vwJwlNknRYO2PT01S84_KL3DlQLshV1hMxjjOrFpoSKfwyOpj-0vOJKvgni6kE1XVtJAO4mAegtvCEnMOH80pOUiLQvQ6Y1gRVCNuyKm1MMTq8XUmdDm2KWRJhcIizSCbYrrNczq86lnhEd7q-pLzoK5G8sK_kbBQJKaC4oS6jgmr4UC7VFwe09nQ6m8eylYqwmRk_OuW15v-6hMxZq6h5ieCrrjb_AhDT5iSQVdQOHXsUHeN574m5s3-VA"/>
+<div>
+<p class="font-bold">Jessica Chen</p>
+<p class="text-sm text-[var(--text-secondary-color)]">Lead Instructor</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
