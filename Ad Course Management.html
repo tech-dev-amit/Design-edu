@@ -1,0 +1,248 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#171215] dark group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#372a33] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">EduSpark Admin</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Courses</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Users</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Analytics</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Settings</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpt_HWGmFlHQNFzp7r19Cklf1dWGrdrzWP5cQ3jYD96Bl1XjiQN3TR8SCuaSIOwRUGd3JEkJ2aB4COKwHlC1xKfJFSseKB5GHkDysornrZp2mNZLjo73E3pUFUTfHskGVwCs6rv8AXCuCIO0-FN6dZLDIMXFzbSPbf5uG8XRf1dHAO2-PpDv9ckBi2RBNX7JlAKUpqj1kH8gynVfUM3F1QXMiiQIdRJSvVKdHkgMXV6AQ49UmF3tl6ScibSRloXgz8vae7m4Y3Ois");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Course Management</p>
+                <p class="text-[#b79faf] text-sm font-normal leading-normal">Approve, publish, and monitor course enrollment.</p>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Courses Pending Approval</h3>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#513d4b] bg-[#171215]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#261d23]">
+                      <th class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-120 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">
+                        Course Title
+                      </th>
+                      <th class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-240 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Instructor</th>
+                      <th class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-360 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Category</th>
+                      <th class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-480 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Enrollment</th>
+                      <th class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-600 px-4 py-3 text-left text-white w-60 text-sm font-medium leading-normal">Status</th>
+                      <th class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-720 px-4 py-3 text-left text-white w-60 text-[#b79faf] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#513d4b]">
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Introduction to Programming
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-240 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Dr. Anya Sharma
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-360 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Computer Science
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-480 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">50</td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#372a33] text-white text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Pending</span>
+                        </button>
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-720 h-[72px] px-4 py-2 w-60 text-[#b79faf] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Approve
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#513d4b]">
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Digital Marketing Fundamentals
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-240 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Mr. Ben Carter
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-360 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Marketing
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-480 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">30</td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#372a33] text-white text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Pending</span>
+                        </button>
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-720 h-[72px] px-4 py-2 w-60 text-[#b79faf] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Approve
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#513d4b]">
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Creative Writing Workshop
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-240 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Ms. Chloe Davis
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-360 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Arts &amp; Humanities
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-480 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">25</td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#372a33] text-white text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Pending</span>
+                        </button>
+                      </td>
+                      <td class="table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-720 h-[72px] px-4 py-2 w-60 text-[#b79faf] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Approve
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-120{display: none;}}
+                @container(max-width:240px){.table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-240{display: none;}}
+                @container(max-width:360px){.table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-360{display: none;}}
+                @container(max-width:480px){.table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-480{display: none;}}
+                @container(max-width:600px){.table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-600{display: none;}}
+                @container(max-width:720px){.table-e35517c9-7097-45a6-9700-703d6fbb2e35-column-720{display: none;}}
+              </style>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Published Courses</h3>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#513d4b] bg-[#171215]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#261d23]">
+                      <th class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-120 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">
+                        Course Title
+                      </th>
+                      <th class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-240 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Instructor</th>
+                      <th class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-360 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Category</th>
+                      <th class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-480 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Enrollment</th>
+                      <th class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-600 px-4 py-3 text-left text-white w-60 text-sm font-medium leading-normal">Status</th>
+                      <th class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-720 px-4 py-3 text-left text-white w-60 text-[#b79faf] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#513d4b]">
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Advanced Data Analysis
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-240 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Dr. Ethan Reed
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-360 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Data Science
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-480 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">75</td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#372a33] text-white text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Published</span>
+                        </button>
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-720 h-[72px] px-4 py-2 w-60 text-[#b79faf] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View Details
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#513d4b]">
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Business Strategy and Leadership
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-240 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Ms. Fiona Green
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-360 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">Business</td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-480 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">60</td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#372a33] text-white text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Published</span>
+                        </button>
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-720 h-[72px] px-4 py-2 w-60 text-[#b79faf] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View Details
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#513d4b]">
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Graphic Design Masterclass
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-240 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">
+                        Mr. George Hill
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-360 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">Design</td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-480 h-[72px] px-4 py-2 w-[400px] text-[#b79faf] text-sm font-normal leading-normal">45</td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#372a33] text-white text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Published</span>
+                        </button>
+                      </td>
+                      <td class="table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-720 h-[72px] px-4 py-2 w-60 text-[#b79faf] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View Details
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-120{display: none;}}
+                @container(max-width:240px){.table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-240{display: none;}}
+                @container(max-width:360px){.table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-360{display: none;}}
+                @container(max-width:480px){.table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-480{display: none;}}
+                @container(max-width:600px){.table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-600{display: none;}}
+                @container(max-width:720px){.table-a407508d-6dde-4644-b068-8a4ebe6ef347-column-720{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
